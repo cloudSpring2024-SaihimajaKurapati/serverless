@@ -40,9 +40,9 @@ const mg = mailgun({ apiKey: 'fb7bb8764ffaf277ae72f50d5c1c7f97-f68a26c9-950fe44e
 const sendVerificationEmail = async (data) => {
   const emailData = {
     from: 'webapp account creation <no-reply@cloudweba.me>',
-    to: data.username,
+    to: data.userName,
     subject: 'Verify your email address',
-    text: `Click the following link to verify your email address: https://cloudweba.me:3000/verify/${data.id}`,
+    text: `Click the following link to verify your email address: http://cloudweba.me:3000/verify/${data.id}`,
   };
 
   try {
