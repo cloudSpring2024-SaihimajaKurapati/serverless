@@ -42,7 +42,7 @@ const sendVerificationEmail = async (data) => {
     from: 'webapp account creation <no-reply@cloudweba.me>',
     to: data.userName,
     subject: 'Verify your email address',
-    text: `Click the following link to verify your email address: http://cloudweba.me:3000/verify/${data.id}`,
+    text: `Click the following link to verify your email address: https://cloudweba.me/verify/${data.id}`,
   };
 
   try {
